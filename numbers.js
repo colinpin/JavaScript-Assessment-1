@@ -17,6 +17,14 @@ for (i = 20; i < 100; i++) {
 //3. find the class average given the following test scores
 
 var scores = [88, 84, 100, 92, 70, 76, 76, 84, 86, 98]; 
+var total = 0;
+
+for (var i = 0; i < scores.length; i++) {
+    total += scores[i];
+}
+console.log(total / scores.length);
+
+//or, google taught me:
 
 var average = scores.reduce(add, 0);
 function add(a, b) {
